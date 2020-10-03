@@ -1,17 +1,12 @@
-/*
-colors
-
-// light blue: #235ab3;
-medium blue: #193d79;
-dark blue: #041b40;
-
-*/
-
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -19,137 +14,102 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #777;
-  padding: 15px;
-}
+  padding: 15px; }
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(
-    to right bottom,
-     rgba(35, 90, 179, 0.8),
-      rgba(4, 27, 64, 0.8)),
-      url(../graphic/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(35, 90, 179, 0.8), rgba(4, 27, 64, 0.8)), url(../graphic/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 97% 0, 100% 92%, 3% 100%);
-}
+  clip-path: polygon(0 0, 97% 0, 100% 92%, 3% 100%); }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
-}
+  top: 4rem;
+  left: 4rem; }
 
-.logo {
-  height: 185px;
+.header__logo {
+  height: 18.5rem;
   opacity: .6;
-  border-radius: 16px;
-}
+  border-radius: 16px; }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-}
+  text-align: center; }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 60px;
-}
+  margin-bottom: 60px; }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 60px;
   font-weight: 200;
   letter-spacing: 15px;
+  animation: moveInLeft 1s cubic-bezier(0.58, 0.01, 0.42, 0.92); }
 
-  animation: moveInLeft 1s cubic-bezier(.58,.01,.42,.92);
-}
-
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 10px;
   text-align: center;
-
-  animation: moveInRight 1s cubic-bezier(.58,.01,.42,.92);
-}
+  animation: moveInRight 1s cubic-bezier(0.58, 0.01, 0.42, 0.92); }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-200px);
-  }
-
+    transform: translateX(-200px); }
   60% {
-    transform: translateX(70px);
-  }
-
+    transform: translateX(70px); }
   100% {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
+    transform: translateX(0); } }
 
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(200px);
-  }
-
+    transform: translateX(200px); }
   60% {
-    transform: translateX(-70px);
-  }
-
+    transform: translateX(-70px); }
   100% {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
+    transform: translateX(0); } }
 
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(60px);
-  }
-
+    transform: translateY(60px); }
   100% {
     opacity: 1;
-    transform: translateY(0);
-  }
-}
+    transform: translateY(0); } }
 
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  // border-radius: 100px;
   transition: all .2s;
   position: relative;
-}
+  font-size: 2rem; }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 10px 10px 20px rgba(0,0,0, .6);
-}
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6); }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 5px 5px 10px rgba(0,0,0, .6);
-  
-}
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6); }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
-  color: #777;
-}
+  color: #777; }
 
 .btn::after {
   content: '';
@@ -160,23 +120,19 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all .3s;
-}
+  transition: all .3s; }
 
-.btn-white::after {
-  background-color: #fff;
-}
+.btn--white::after {
+  background-color: #fff; }
+
 .btn-white:hover::after {
   transform: scaleX(1.35) scaleY(1.6);
-  opacity: 0;
-}
+  opacity: 0; }
 
 .parallelogram {
   width: 100%;
-  transform: skew(4deg);
-}
+  transform: skew(4deg); }
 
 .btn--animated {
-  animation: moveInBottom 1s cubic-bezier(.58,.01,.42,.92) .75s;
-  animation-fill-mode: backwards;
-}
+  animation: moveInBottom 1s cubic-bezier(0.58, 0.01, 0.42, 0.92) 0.75s;
+  animation-fill-mode: backwards; }
