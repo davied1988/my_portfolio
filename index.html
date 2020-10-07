@@ -18,7 +18,7 @@
 
 <body>
 
-  <!-- HEADER -->
+  <!-- START OF HEADER -->
   <header class="header">
     <div class="header__logo-box">
       <img src="graphic/logo.png" alt="Logo" class="header__logo">
@@ -35,108 +35,244 @@
   <div class="u-margin-bottom-big"></div>
   <!-- END OF HEADER -->
 
+  <main>
+    <!-- START OF CARDS -->
 
-  <!-- CARDS -->
-  
-  <section class="card-container">
-    <div class="u-center-text u-margin-bottom-big">
-      <h2 class="heading-secondary">
-          Most popular tours
-      </h2>
-    </div>
-    <div class="u-center-text u-margin-bottom-big flex-row">
-      <div class="card">
-        <div class="card__side card__side--front">
-          <div class="card__picture card__picture--1">
-            &nbsp;
+    <section class="card-container">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          My projects
+        </h2>
+      </div>
+      <div class="u-center-text u-margin-bottom-big flex-row">
+        <div class="card">
+          <div class="card__side card__side--front">
+            <div class="card__picture card__picture--1">
+              &nbsp;
+            </div>
+            <h4 class="card__heading">
+              <span class="card__heading-span card__heading-span--1">The Sea Explorer</span>
+            </h4>
+            <div class="card__details">
+              <ul>
+                <li>3 day tours</li>
+                <li>Up to 30 people</li>
+                <li>2 tour guides</li>
+                <li>Sleep in cozy hotels</li>
+                <li>Difficulty: easy</li>
+              </ul>
+            </div>
           </div>
-          <h4 class="card__heading">
-            <span class="card__heading-span card__heading-span--1">The Sea Explorer</span>
-          </h4>
-          <div class="card__details">
-            <ul>
-              <li>3 day tours</li>
-              <li>Up to 30 people</li>
-              <li>2 tour guides</li>
-              <li>Sleep in cozy hotels</li>
-              <li>Difficulty: easy</li>
-            </ul>
+          <div class="card__side card__side--back card__side--back-1">
+            <div class="card__cta">
+              <div class="card__price-box">
+                <p class="card__price-only">Only</p>
+                <p class="card__price-value">$297</p>
+              </div>
+              <a href="#" class="btn btn--white btn--parallelogram">Book now!</a>
+            </div>
           </div>
         </div>
-        <div class="card__side card__side--back card__side--back-1">
-          <div class="card__cta">
-            <div class="card__price-box">
-              <p class="card__price-only">Only</p>
-              <p class="card__price-value">$297</p>
+
+        <div class="card">
+          <div class="card__side card__side--front">
+            <div class="card__picture card__picture--2">
+              &nbsp;
             </div>
-            <a href="#" class="btn btn--white btn--parallelogram">Book now!</a>
+            <h4 class="card__heading">
+              <span class="card__heading-span card__heading-span--2">The Snow Adventurer</span>
+            </h4>
+            <div class="card__details">
+              <ul>
+                <li>5 day tours</li>
+                <li>Up to 15 people</li>
+                <li>3 tour guides</li>
+                <li>Sleep in provided tents</li>
+                <li>Difficulty: hard</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card__side card__side--back card__side--back-2">
+            <div class="card__cta">
+              <div class="card__price-box">
+                <p class="card__price-only">Only</p>
+                <p class="card__price-value">$897</p>
+              </div>
+              <a href="#popup" class="btn btn--white">Book now!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__side card__side--front">
+            <div class="card__picture card__picture--3">
+              &nbsp;
+            </div>
+            <h4 class="card__heading">
+              <span class="card__heading-span card__heading-span--3">The Snow Adventurer</span>
+            </h4>
+            <div class="card__details">
+              <ul>
+                <li>5 day tours</li>
+                <li>Up to 15 people</li>
+                <li>3 tour guides</li>
+                <li>Sleep in provided tents</li>
+                <li>Difficulty: hard</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card__side card__side--back card__side--back-3">
+            <div class="card__cta">
+              <div class="card__price-box">
+                <p class="card__price-only">Only</p>
+                <p class="card__price-value">$897</p>
+              </div>
+              <a href="#popup" class="btn btn--white">Book now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- END OF CARDS -->
+
+    <!-- START OF FORM -->
+    <section class="section-book u-margin-top-big">
+      <div class="row">
+        <div class="book">
+          <div class="book__form">
+            <form action="#" class="form">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                  Contact me
+                </h2>
+              </div>
+
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Full name" id="name" required>
+                <label for="name" class="form__label">Full name</label>
+              </div>
+
+              <div class="form__group">
+                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                <label for="email" class="form__label">Email address</label>
+              </div>
+
+              <div class="form__group u-margin-bottom-medium">
+                <div class="form__radio-group">
+                  <input type="radio" class="form__radio-input" id="small" name="size">
+                  <label for="small" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Business
+                  </label>
+                </div>
+
+                <div class="form__radio-group">
+                  <input type="radio" class="form__radio-input" id="large" name="size">
+                  <label for="large" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Private
+                  </label>
+                </div>
+              </div>
+
+              <div class="form__group btn--parallelogram">
+                <button class="btn btn--blue">Contact me &rarr;</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END OF FORM -->
+
+    <!-- START OF STORY -->
+
+    <section class="section-stories">
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="graphic/video.mp4" type="video/mp4">
+          <!-- <source src="img/video.webm" type="video/webm"> -->
+          Your browser is not supported!
+        </video>
+      </div>
+
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          Why is front-end so amazing? <br> Because you're only limited by your imagination
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="story">
+          <figure class="story__shape">
+            <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
+            <figcaption class="story__caption">Mary Smith</figcaption>
+          </figure>
+          <div class="story__text">
+            <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero
+              repellat
+              quis consequatur
+              ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+              repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+            </p>
           </div>
         </div>
       </div>
 
-      <div class="card">
-        <div class="card__side card__side--front">
-          <div class="card__picture card__picture--2">
-            &nbsp;
-          </div>
-          <h4 class="card__heading">
-            <span class="card__heading-span card__heading-span--2">The Snow Adventurer</span>
-          </h4>
-          <div class="card__details">
-            <ul>
-              <li>5 day tours</li>
-              <li>Up to 15 people</li>
-              <li>3 tour guides</li>
-              <li>Sleep in provided tents</li>
-              <li>Difficulty: hard</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card__side card__side--back card__side--back-2">
-          <div class="card__cta">
-            <div class="card__price-box">
-              <p class="card__price-only">Only</p>
-              <p class="card__price-value">$897</p>
-            </div>
-            <a href="#popup" class="btn btn--white">Book now!</a>
+      <div class="row">
+        <div class="story">
+          <figure class="story__shape">
+            <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
+            <figcaption class="story__caption">Jack Wilson</figcaption>
+          </figure>
+          <div class="story__text">
+            <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero
+              repellat
+              quis consequatur
+              ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+              repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+            </p>
           </div>
         </div>
       </div>
 
-      <div class="card">
-        <div class="card__side card__side--front">
-          <div class="card__picture card__picture--3">
-            &nbsp;
-          </div>
-          <h4 class="card__heading">
-            <span class="card__heading-span card__heading-span--3">The Snow Adventurer</span>
-          </h4>
-          <div class="card__details">
-            <ul>
-              <li>5 day tours</li>
-              <li>Up to 15 people</li>
-              <li>3 tour guides</li>
-              <li>Sleep in provided tents</li>
-              <li>Difficulty: hard</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card__side card__side--back card__side--back-3">
-          <div class="card__cta">
-            <div class="card__price-box">
-              <p class="card__price-only">Only</p>
-              <p class="card__price-value">$897</p>
-            </div>
-            <a href="#popup" class="btn btn--white">Book now!</a>
-          </div>
-        </div>
+      <div class="u-center-text u-margin-top-huge">
+        <a href="#" class="btn-text">Read all stories &rarr;</a>
       </div>
+    </section>
+
+    <!-- END OF STORY -->
+
+  </main>
+
+  <!-- START OF FOOTER -->
+
+  <footer class="footer u-margin-top-huge">
+    <div class="flex-row flex-row--footer">
+      <div class="footer__logo-box">
+        <picture class="footer__logo">
+          <!-- <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+          <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png"> -->
+          <img src="graphic/logo.png" alt="logo">
+        </picture>
+      </div>
+      <p class="footer__copyright u-center-text">
+        Built by Dawid Grudziecki although a special thanks for Jonas Schmedtmann, who inspired me by his layout and
+        thanks to his online course <a href="#" class="footer__link">Advanced CSS and Sass</a> I've learn a ton of new
+        stuff in terms of advanced CSS. <br> Copyright &copy; Dawid Grudziecki
+      </p>
     </div>
-    </div>
-  </section>
-  <!-- END OF CARDS -->
+  </footer>
+
+  <!-- END OF FOOTER -->
 
 </body>
 

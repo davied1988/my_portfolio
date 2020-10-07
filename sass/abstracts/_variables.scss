@@ -9,6 +9,9 @@ $color-tertiary-light: #a945fc;
 $color-tertiary-dark: #7707a3;
 
 $color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
 $color-white: #fff;
 $color-black: #000;
 $color-light-white: #ddd;
@@ -17,3 +20,13 @@ $color-grey-light-1: #ffffff;
 $color-grey-light-2: #eee;
 
 $polygon: polygon(0 0, 97% 0, 100% 92%, 3% 100%);
+
+// FONT
+$default-font-size: 1.6rem;
+
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
