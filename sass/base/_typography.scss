@@ -4,7 +4,6 @@ body {
   // font-size: 16px;
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 1.5rem;
   background-color: $color-light-white;
 }
 
@@ -15,11 +14,19 @@ body {
 
   &--main {
     display: block;
-    font-size: 6rem;
-    font-weight: 200;
+    font-size: 5rem;
+    font-weight: 400;
     letter-spacing: 1.5rem;
   
     animation: moveInLeft 1s cubic-bezier(.58,.01,.42,.92);
+
+    &::selection {
+      background-color: rgba(53, 143, 185, .4);
+    }
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+    }
   }
   
   &--sub {
@@ -28,8 +35,11 @@ body {
     font-weight: 700;
     letter-spacing: 1rem;
     text-align: center;
-  
     animation: moveInRight 1s cubic-bezier(.58,.01,.42,.92);
+
+    &::selection {
+      background-color: rgba(53, 143, 185, .4);
+    }
   }
 }
 
@@ -37,6 +47,8 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
+  padding-left: 2.5rem;
+    padding-right: 2.5rem;
   display: inline-block;
   background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
   -webkit-background-clip: text;
@@ -46,16 +58,37 @@ body {
   transition: all .2s;
 
   // @include respond(tab-port) {
-  //     font-size: 3rem;
+  //   font-size: 3rem;
   // }
 
-  // @include respond(phone) {
-  //     font-size: 2.5rem;
-  // }
+  @include respond(phone) {
+    // font-size: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
   &:hover {
       // transform: skewY(2deg) skewX(15deg) scale(1.1);
       transform: scale(1.25);
       // text-shadow: 2rem 4rem 4rem rgba($color-black, .8);
   }
+}
+
+.heading-tertiary {
+  font-size: $big-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &::selection {
+    background-color: rgb(108, 113, 116);
+    color: $color-white;
+  }
+
+  @include respond(tab-land) {
+    // font-size: $big-font-size;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+
 }

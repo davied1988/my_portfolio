@@ -20,6 +20,13 @@
 
   <!-- START OF HEADER -->
   <header class="header">
+    <div class="bg-video">
+      <video class="bg-video__content" autoplay muted loop>
+        <source src="graphic/video.mp4" type="video/mp4">
+        <!-- <source src="img/video.webm" type="video/webm"> -->
+        Your browser is not supported!
+      </video>
+    </div>
     <div class="header__logo-box">
       <img src="graphic/logo.png" alt="Logo" class="header__logo">
     </div>
@@ -29,7 +36,7 @@
         <span class="heading-primary--main">Dawid Grudziecki</span>
         <span class="heading-primary--sub">Junior Front-End Developer</span>
       </h1>
-      <a href="#" class="btn btn--white btn--animated btn--parallelogram">Check my projects</a>
+      <a href="#" class="btn btn--white btn--animated btn--parallelogram btn--header">Check my projects</a>
     </div>
   </header>
   <div class="u-margin-bottom-big"></div>
@@ -38,108 +45,190 @@
   <main>
     <!-- START OF CARDS -->
 
-    <section class="card-container">
+    <section>
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">
           My projects
         </h2>
       </div>
-      <div class="u-center-text u-margin-bottom-big flex-row">
-        <div class="card">
-          <div class="card__side card__side--front">
-            <div class="card__picture card__picture--1">
-              &nbsp;
-            </div>
-            <h4 class="card__heading">
-              <span class="card__heading-span card__heading-span--1">The Sea Explorer</span>
-            </h4>
-            <div class="card__details">
-              <ul>
-                <li>3 day tours</li>
-                <li>Up to 30 people</li>
-                <li>2 tour guides</li>
-                <li>Sleep in cozy hotels</li>
-                <li>Difficulty: easy</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card__side card__side--back card__side--back-1">
-            <div class="card__cta">
-              <div class="card__price-box">
-                <p class="card__price-only">Only</p>
-                <p class="card__price-value">$297</p>
+      <div class="u-center-text u-margin-bottom-big">
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">
+                  &nbsp;
+                </div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1">Project 1</span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
+                    <li>Feature 5</li>
+                  </ul>
+                </div>
               </div>
-              <a href="#" class="btn btn--white btn--parallelogram">Book now!</a>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Wait please!</p>
+                    <p class="card__price-value">Under Construction</p>
+                  </div>
+                  <a href="#" class="btn btn--white btn--parallelogram">Check this!</a>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">
+                  &nbsp;
+                </div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2">Project 2</span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
+                    <li>Feature 5</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Release Soon</p>
+                    <p class="card__price-value">Under Construction</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white btn--parallelogram">Check this!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">
+                  &nbsp;
+                </div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3">Project 3</span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
+                    <li>Feature 5</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Be patient please</p>
+                    <p class="card__price-value">Under Construction</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white btn--parallelogram">Check this!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="card">
-          <div class="card__side card__side--front">
-            <div class="card__picture card__picture--2">
-              &nbsp;
-            </div>
-            <h4 class="card__heading">
-              <span class="card__heading-span card__heading-span--2">The Snow Adventurer</span>
-            </h4>
-            <div class="card__details">
-              <ul>
-                <li>5 day tours</li>
-                <li>Up to 15 people</li>
-                <li>3 tour guides</li>
-                <li>Sleep in provided tents</li>
-                <li>Difficulty: hard</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card__side card__side--back card__side--back-2">
-            <div class="card__cta">
-              <div class="card__price-box">
-                <p class="card__price-only">Only</p>
-                <p class="card__price-value">$897</p>
-              </div>
-              <a href="#popup" class="btn btn--white">Book now!</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card__side card__side--front">
-            <div class="card__picture card__picture--3">
-              &nbsp;
-            </div>
-            <h4 class="card__heading">
-              <span class="card__heading-span card__heading-span--3">The Snow Adventurer</span>
-            </h4>
-            <div class="card__details">
-              <ul>
-                <li>5 day tours</li>
-                <li>Up to 15 people</li>
-                <li>3 tour guides</li>
-                <li>Sleep in provided tents</li>
-                <li>Difficulty: hard</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card__side card__side--back card__side--back-3">
-            <div class="card__cta">
-              <div class="card__price-box">
-                <p class="card__price-only">Only</p>
-                <p class="card__price-value">$897</p>
-              </div>
-              <a href="#popup" class="btn btn--white">Book now!</a>
-            </div>
-          </div>
-        </div>
       </div>
       </div>
     </section>
     <!-- END OF CARDS -->
 
+    <!-- START OF STORY -->
+
+    <section class="section-stories u-margin-top-huge">
+      <div class="bg-video bg-video--opacity">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="graphic/video2.mp4" type="video/mp4">
+          <!-- <source src="img/video.webm" type="video/webm"> -->
+          Your browser is not supported!
+        </video>
+      </div>
+
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          Why is front-end so amazing? <br> Because you're only limited by your imagination <br> It's a very deep ocean.
+          Swim!
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="story">
+            <figure class="story__shape">
+              <img src="graphic/flatmate.jpg" alt="David's former flatmate" class="story__img">
+              <figcaption class="story__caption">Flatmate</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">Flatmate</h3>
+              <p>
+                "This guy is impossible. He writes code until 4 am every night because he's so determined to become a
+                front-end developer. Not being interested in this guy is a serious offense."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="story">
+            <figure class="story__shape">
+              <img src="graphic/mummy.jpg" alt="David's Mother" class="story__img">
+              <figcaption class="story__caption">Mummy</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">Mummy</h3>
+              <p>
+                "He has an eye for the smallest detail. I never expected to have such a wonderful, talented and
+                hardworking son. He will be a great employee in any software house!"
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="story">
+            <figure class="story__shape">
+              <img src="graphic/bono.jpg" alt="Bono - rock singer" class="story__img">
+              <figcaption class="story__caption">Bono</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">Bono</h3>
+              <p>
+                "David is an animal when he comes out on stage. Singing "New Year's Day" with him was something special.
+                Invite him to the interview immediately. And give me a Spotify sub, huh?"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END OF STORY -->
+
     <!-- START OF FORM -->
-    <section class="section-book u-margin-top-big">
+    <section class="section-book u-margin-top-huge">
       <div class="row">
         <div class="book">
           <div class="book__form">
@@ -189,79 +278,17 @@
 
     <!-- END OF FORM -->
 
-    <!-- START OF STORY -->
-
-    <section class="section-stories">
-      <div class="bg-video">
-        <video class="bg-video__content" autoplay muted loop>
-          <source src="graphic/video.mp4" type="video/mp4">
-          <!-- <source src="img/video.webm" type="video/webm"> -->
-          Your browser is not supported!
-        </video>
-      </div>
-
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">
-          Why is front-end so amazing? <br> Because you're only limited by your imagination
-        </h2>
-      </div>
-
-      <div class="row">
-        <div class="story">
-          <figure class="story__shape">
-            <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
-            <figcaption class="story__caption">Mary Smith</figcaption>
-          </figure>
-          <div class="story__text">
-            <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero
-              repellat
-              quis consequatur
-              ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-              repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="story">
-          <figure class="story__shape">
-            <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
-            <figcaption class="story__caption">Jack Wilson</figcaption>
-          </figure>
-          <div class="story__text">
-            <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero
-              repellat
-              quis consequatur
-              ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-              repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="u-center-text u-margin-top-huge">
-        <a href="#" class="btn-text">Read all stories &rarr;</a>
-      </div>
-    </section>
-
-    <!-- END OF STORY -->
-
   </main>
 
   <!-- START OF FOOTER -->
 
-  <footer class="footer u-margin-top-huge">
-    <div class="flex-row flex-row--footer">
+  <footer class="footer u-margin-top-big">
+    <div class="flex-row--footer">
       <div class="footer__logo-box">
-        <picture class="footer__logo">
+        <picture>
           <!-- <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
           <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png"> -->
-          <img src="graphic/logo.png" alt="logo">
+          <img class="footer__logo" src="graphic/logo.png" alt="logo">
         </picture>
       </div>
       <p class="footer__copyright u-center-text">
