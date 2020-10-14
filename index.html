@@ -18,8 +18,53 @@
 
 <body>
 
+  <!-- START OF NAVIGATION -->
+
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#section-jumbotron" class="navigation__link"><span>1. </span>Jumbotron</a>
+        </li>
+        <li class="navigation__item"><a href="#section-projects" class="navigation__link"><span>2. </span>Projects</a>
+        </li>
+        <li class="navigation__item"><a href="#section-stories" class="navigation__link"><span>3. </span>Stories</a>
+        </li>
+        <li class="navigation__item"><a href="#section-contact" class="navigation__link"><span>4. </span>Contact</a>
+        </li>
+        <li class="navigation__item"><a href="#section-footer" class="navigation__link"><span>5. </span>Footer</a></li>
+      </ul>
+    </nav>
+
+    <nav class="navigation__navbar">
+      <ul class="navigation__list--main">
+        <div class="header__logo-box">
+          <img src="graphic/logo.png" alt="Logo" class="header__logo">
+        </div>
+        <li class="navigation__item--main"><a href="#section-jumbotron" class="navigation__link--main">Jumbotron</a>
+        </li>
+        <li class="navigation__item--main"><a href="#section-projects" class="navigation__link--main">Projects</a>
+        </li>
+        <li class="navigation__item--main"><a href="#" class="navigation__link--main">Check CV</a></li>
+        <li class="navigation__item--main"><a href="#section-stories" class="navigation__link--main">Stories</a></li>
+        <li class="navigation__item--main"><a href="#section-contact" class="navigation__link--main">Contact</a></li>
+        <li class="navigation__item--main"><a href="#section-footer" class="navigation__link--main">Footer</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- END OF NAVIGATION -->
+
   <!-- START OF HEADER -->
-  <header class="header">
+
+  <header class="header" id="section-jumbotron">
     <div class="bg-video">
       <video class="bg-video__content" autoplay muted loop>
         <source src="graphic/video.mp4" type="video/mp4">
@@ -27,25 +72,28 @@
         Your browser is not supported!
       </video>
     </div>
-    <div class="header__logo-box">
+    <!-- <div class="header__logo-box">
       <img src="graphic/logo.png" alt="Logo" class="header__logo">
-    </div>
+    </div> -->
 
     <div class="header__text-box">
       <h1 class="heading-primary">
         <span class="heading-primary--main">Dawid Grudziecki</span>
         <span class="heading-primary--sub">Junior Front-End Developer</span>
       </h1>
-      <a href="#" class="btn btn--white btn--animated btn--parallelogram btn--header">Check my projects</a>
+      <a href="#section-projects" class="btn btn--blue btn--animated btn--parallelogram btn--header">Check my
+        projects</a>
     </div>
   </header>
   <div class="u-margin-bottom-big"></div>
+
   <!-- END OF HEADER -->
 
   <main>
+
     <!-- START OF CARDS -->
 
-    <section>
+    <section class="my-projects" id="section-projects">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">
           My projects
@@ -158,7 +206,7 @@
 
     <!-- START OF STORY -->
 
-    <section class="section-stories u-margin-top-huge">
+    <section class="section-stories u-margin-top-huge" id="section-stories">
       <div class="bg-video bg-video--opacity">
         <video class="bg-video__content" autoplay muted loop>
           <source src="graphic/video2.mp4" type="video/mp4">
@@ -228,7 +276,8 @@
     <!-- END OF STORY -->
 
     <!-- START OF FORM -->
-    <section class="section-book u-margin-top-huge">
+
+    <section class="section-book u-margin-top-huge" id="section-contact">
       <div class="row">
         <div class="book">
           <div class="book__form">
@@ -282,7 +331,7 @@
 
   <!-- START OF FOOTER -->
 
-  <footer class="footer u-margin-top-big">
+  <footer class="footer u-margin-top-big" id="section-footer">
     <div class="flex-row--footer">
       <div class="footer__logo-box">
         <picture>
@@ -301,6 +350,39 @@
 
   <!-- END OF FOOTER -->
 
+  <!-- START OD MODAL -->
+  <div class="popup" id="popup">
+    <div class="popup__content">
+      <div class="popup__left">
+        <img src="graphic/cow.jpg" alt="cow photo" class="popup__img">
+        <img src="graphic/cat.jpg" alt="cat photo" class="popup__img">
+      </div>
+      <div class="popup__right">
+        <a href="#section-tours" class="popup__close">&times;</a>
+        <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+        <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+        <p class="popup__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+          Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit
+          amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim
+          sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget
+          gravida cum sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet.
+          Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus
+          vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa
+          vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
+          euismod nisi porta.
+        </p>
+        <a href="#" class="btn btn--blue">Book now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- END OD MODAL -->
+
+  <script>
+
+  </script>
 </body>
 
 </html>
