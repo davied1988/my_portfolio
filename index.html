@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
   <!--<link rel="stylesheet" href="css/icon-font.css">-->
@@ -24,7 +27,18 @@
     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
     <label for="navi-toggle" class="navigation__button">
-      <span class="navigation__icon">&nbsp;</span>
+      <!-- <span class="navigation__icon">&nbsp;</span> -->
+      <div class="icon nav-icon-1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </label>
 
     <div class="navigation__background">&nbsp;</div>
@@ -52,7 +66,8 @@
         </li>
         <li class="navigation__item--main"><a href="#section-projects" class="navigation__link--main">Projects</a>
         </li>
-        <li class="navigation__item--main"><a href="#" class="navigation__link--main">Check CV</a></li>
+        <li class="navigation__item--main"><a href="graphic/Dawid Grudziecki.pdf" download="Dawid Grudziecki"
+            class="navigation__link--main">Check CV</a></li>
         <li class="navigation__item--main"><a href="#section-stories" class="navigation__link--main">Stories</a></li>
         <li class="navigation__item--main"><a href="#section-contact" class="navigation__link--main">Contact</a></li>
         <li class="navigation__item--main"><a href="#section-footer" class="navigation__link--main">Footer</a></li>
@@ -340,6 +355,27 @@
           <img class="footer__logo" src="graphic/logo.png" alt="logo">
         </picture>
       </div>
+
+      <div class="footer__social">
+
+        <div class="footer__social--linkedin">
+          <a href="https://www.linkedin.com/in/d-grudziecki/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <div class="footer__social--twitter">
+          <a href="https://twitter.com/d_grudziecki" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <div class="footer__social--facebook">
+          <a href="https://www.facebook.com/dawid.grudziecki/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+
+        <!-- <div class="footer__social--instagram">
+          <a href="https://www.linkedin.com/in/d-grudziecki/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div> -->
+
+      </div>
+
       <p class="footer__copyright u-center-text">
         Built by Dawid Grudziecki although a special thanks for Jonas Schmedtmann, who inspired me by his layout and
         thanks to his online course <a href="#" class="footer__link">Advanced CSS and Sass</a> I've learn a ton of new
@@ -381,6 +417,15 @@
   <!-- END OD MODAL -->
 
   <script>
+    // HAMBURGER ANIMATION
+    const icons = document.querySelectorAll('.icon');
+    icons.forEach(icon => {
+      icon.addEventListener('click', (event) => {
+        icon.classList.toggle("open");
+      });
+    });
+
+
 
   </script>
 </body>
