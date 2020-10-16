@@ -24,11 +24,12 @@
   <!-- START OF NAVIGATION -->
 
   <div class="navigation">
+    <!-- HAMBURGER NAV -->
     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
     <label for="navi-toggle" class="navigation__button">
-      <!-- <span class="navigation__icon">&nbsp;</span> -->
-      <div class="icon nav-icon-1">
+      <span class="navigation__icon">&nbsp;</span>
+      <!-- <div class="icon nav-icon-1">
         <span></span>
         <span></span>
         <span></span>
@@ -38,25 +39,31 @@
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </div> -->
     </label>
 
     <div class="navigation__background">&nbsp;</div>
 
     <nav class="navigation__nav">
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="#section-jumbotron" class="navigation__link"><span>1. </span>Jumbotron</a>
+        <li class="navigation__item"><a href="#section-jumbotron" class="navigation__link"
+            onclick="document.querySelector('.navigation__checkbox').checked=false"><span>1. </span>Jumbotron</a>
         </li>
-        <li class="navigation__item"><a href="#section-projects" class="navigation__link"><span>2. </span>Projects</a>
+        <li class="navigation__item"><a href="#section-projects" class="navigation__link"
+            onclick="document.querySelector('.navigation__checkbox').checked=false"><span>2. </span>Projects</a>
         </li>
-        <li class="navigation__item"><a href="#section-stories" class="navigation__link"><span>3. </span>Stories</a>
+        <li class="navigation__item"><a href="#section-stories" class="navigation__link"
+            onclick="document.querySelector('.navigation__checkbox').checked=false"><span>3. </span>Stories</a>
         </li>
-        <li class="navigation__item"><a href="#section-contact" class="navigation__link"><span>4. </span>Contact</a>
+        <li class="navigation__item"><a href="#section-contact" class="navigation__link"
+            onclick="document.querySelector('.navigation__checkbox').checked=false"><span>4. </span>Contact</a>
         </li>
-        <li class="navigation__item"><a href="#section-footer" class="navigation__link"><span>5. </span>Footer</a></li>
+        <li class="navigation__item"><a href="#section-footer" class="navigation__link"
+            onclick="document.querySelector('.navigation__checkbox').checked=false"><span>5. </span>Footer</a></li>
       </ul>
     </nav>
 
+    <!-- MAIN NAV -->
     <nav class="navigation__navbar">
       <ul class="navigation__list--main">
         <div class="header__logo-box">
@@ -420,6 +427,23 @@
         icon.classList.toggle("open");
       });
     });
+
+    // HAMBURGER SCALE CLOSE
+    const listItems = document.querySelectorAll('.navigation__link');
+    const checkbox = document.querySelector('.navigation__checkbox');
+    console.log(listItems);
+    console.log(checkbox);
+
+    listItems.forEach.addEventListener('click', close);
+
+
+    function close() {
+      if (checkbox.checked) {
+        listItems.style = "transform: scale(90)";
+      } else {
+        listItems.style = "transform: scale(0)";
+      }
+    }
 
 
 
